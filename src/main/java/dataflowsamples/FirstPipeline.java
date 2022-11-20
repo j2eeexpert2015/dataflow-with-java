@@ -16,7 +16,6 @@ public class FirstPipeline
 {
     public static void main(String[] args) {
         pipelineRunWithLocaleFileData();
-
     }
 
     public static void pipelineRunWithDummyData()
