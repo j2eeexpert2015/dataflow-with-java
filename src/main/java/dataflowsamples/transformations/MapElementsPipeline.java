@@ -1,15 +1,16 @@
 package dataflowsamples.transformations;
 
-import dataflowsamples.FirstPipeline;
-import org.apache.beam.sdk.Pipeline;
-
-import org.apache.beam.sdk.transforms.*;
-import org.apache.beam.sdk.values.PCollection;
-import org.apache.beam.sdk.values.TypeDescriptors;
-
-import java.io.File;
 import java.util.Arrays;
 import java.util.List;
+
+import org.apache.beam.sdk.Pipeline;
+import org.apache.beam.sdk.transforms.Create;
+import org.apache.beam.sdk.transforms.DoFn;
+import org.apache.beam.sdk.transforms.MapElements;
+import org.apache.beam.sdk.transforms.ParDo;
+import org.apache.beam.sdk.transforms.SimpleFunction;
+import org.apache.beam.sdk.values.PCollection;
+import org.apache.beam.sdk.values.TypeDescriptors;
 
 public class MapElementsPipeline
 {

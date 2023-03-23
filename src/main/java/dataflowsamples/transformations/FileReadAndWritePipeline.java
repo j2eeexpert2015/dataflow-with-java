@@ -1,16 +1,12 @@
 package dataflowsamples.transformations;
 
-import dataflowsamples.FirstPipeline;
-import org.apache.beam.sdk.Pipeline;
-import org.apache.beam.sdk.io.FileIO;
-import org.apache.beam.sdk.io.TextIO;
-import org.apache.beam.sdk.transforms.*;
-import org.apache.beam.sdk.values.PCollection;
-import org.apache.beam.sdk.values.TypeDescriptors;
-
 import java.io.File;
-import java.util.Arrays;
-import java.util.List;
+
+import org.apache.beam.sdk.Pipeline;
+import org.apache.beam.sdk.io.TextIO;
+import org.apache.beam.sdk.transforms.DoFn;
+import org.apache.beam.sdk.transforms.ParDo;
+import org.apache.beam.sdk.values.PCollection;
 
 public class FileReadAndWritePipeline
 {
